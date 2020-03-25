@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { CoreRoutes } from './core.routing';
 import { LayoutComponent } from './layout/layout.component';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzBreadCrumbModule } from 'ng-zorro-antd';
 @NgModule({
   imports: [
     CommonModule,
     CoreRoutes,
-    NzLayoutModule
+    NzLayoutModule,
+    NzBreadCrumbModule,
   ],
   declarations: [LayoutComponent]
 })
