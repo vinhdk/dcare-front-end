@@ -9,11 +9,11 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    loadChildren: () => import('src/app/modules/auth/auth.module').then(mod => mod.AuthModule),
+    loadChildren: () => import('src/app/auth/auth.module').then(mod => mod.AuthModule),
   },
   {
     path: 'core',
-    loadChildren: () => import('src/app/modules/core/core.module').then(mod => mod.CoreModule),
+    loadChildren: () => import('src/app/core/core.module').then(mod => mod.CoreModule),
   },
 ];
 
