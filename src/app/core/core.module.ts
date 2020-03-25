@@ -7,6 +7,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
   imports: [
     CommonModule,
     CoreRoutes,
+    NzLayoutModule
   ],
   declarations: [LayoutComponent]
 })
