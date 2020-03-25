@@ -1,0 +1,1 @@
+export * from './service-home/service-home.component';
