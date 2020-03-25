@@ -9,12 +9,18 @@ import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { AppRoutes } from './app.routing';
+import { OrderComponent } from './services/order/order.component';
+import { OrderService } from './services/order.service';
+import { ServiceService } from './services/service.service';
+import { UserService } from './services/user.service';
+import { AuthService } from './services/auth.service';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrderComponent
   ],
   imports: [
     AppRoutes,
@@ -25,7 +31,7 @@ registerLocaleData(en);
     NgZorroAntdModule,
 
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US, providers: [OrderService], providers: [ServiceService], providers: [UserService], providers: [AuthService] }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
