@@ -1,3 +1,3 @@
-import * from './login/login.component';
-import * from './navigate/navigate.component';
-import * from './register/register.component';
+export * from './login/login.component';
+export * from './navigate/navigate.component';
+export * from './register/register.component';
